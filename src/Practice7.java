@@ -6,10 +6,10 @@ public class Practice7 {
         while(copy!=0) {
             count++;
             copy = copy / 10;
-        }
+        } // 1^3 +5^3+ 3^3 = 153 1+125+27 = 125+28 = 153
         while(a!=0) {
-            b = a % 10;
-            a = a / 10;
+            b = a % 10; // 9474 --> 4
+            a = a / 10; // 947  --> 7
             pow +=Math.pow((double)b,(double)count);
         }
         String res=(temp==(int)pow)?"Armstrong num":"not armstrong";

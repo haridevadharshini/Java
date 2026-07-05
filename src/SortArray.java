@@ -1,16 +1,25 @@
-import java.util.*;
-public class SortArray {
-    public static void main(String[] args) {
-        int a[] = {1, 3, 4, 5, 7};
-        for (int i = 0; i < a.length - 1; i++) {
-            for (int j = 0; j < a.length - 1 - i; j++) {
-                if (a[j] > a[j + 1]) {
-                    int temp = a[j];
-                    a[j] = a[j + 1];
-                    a[j + 1] = temp;
-                }
-            }
-        }
-        System.out.println(Arrays.toString(a));
-    }
+import java.util.Scanner;
+import java.util.Arrays;
+class SortArray 
+{
+	public static void main(String[] args) 
+	{
+		int b;
+		Scanner sc = new Scanner(System.in);
+		b = sc.nextInt();
+		int a[] = new int[b];
+		for(int i =0;i<b;i++){
+			a[i] = sc.nextInt();
+	}
+	for(int i =0;i<b;i++){
+		for(int j = i+1;j<b;j++){
+			if(a[i]>a[j]){
+				int temp = a[j];
+				a[j]= a[i];
+				a[i] = temp;
+			}
+		}
+}
+System.out.println(Arrays.toString(a));
+	}
 }

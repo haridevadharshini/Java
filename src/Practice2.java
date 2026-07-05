@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 public class Practice2 {
     public static void main(String[] args) {
         int a = 122322;

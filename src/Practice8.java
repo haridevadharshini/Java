@@ -5,10 +5,10 @@ public class Practice8 {
         System.out.println(a);
         System.out.println(b);
         for(int i=3;i<=n;i++){
-            int next = a+b;
+            int next = a+b; 
             System.out.println(next);
             a=b;
             b=next;
         }
-    }
+    } // 0 0+1 = 1 ,
 }
